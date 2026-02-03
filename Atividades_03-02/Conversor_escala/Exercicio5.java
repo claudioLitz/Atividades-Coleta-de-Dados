@@ -11,13 +11,16 @@ Objetivo: Criar um método reutilizável para converter dados brutos de um PLC.
 public class Exercicio5 { 
     public static void main(String[] args) { 
     double valorBruto = 512; 
+
+    //Cria uma String com o resultado para deixar apenas com 2 casas decimais
     String resultado = String.format("%.2f", converterEscala(valorBruto));
-    System.out.println("O valor na escala de 0-100% é: " + resultado); 
+
+    //Imprime o valor na escala
+    System.out.println("O valor na escala de 0-100% é: " + resultado +"% "); 
     } 
 
-
+    //Método com a fórmula para converter
     public static double converterEscala(double valorBruto){
         return (valorBruto / 1023.0) * 100;
-
     }
 } 
