@@ -1,6 +1,33 @@
+/*
+Exercício 2: Controlo de Segurança de um Tanque (Condicionais) 
+Objetivo: Implementar uma lógica de intertravamento simples. 
+● Lê um valor inteiro que representa o nível de um tanque (0 a 100%). 
+● Se o nível for maior ou igual a 90, exibe: "ALERTA: Nível Crítico - Abrir 
+Válvula de Escoamento!". 
+● Se for menor que 10, exibe: "ALERTA: Nível Baixo - Ativar Bomba de 
+Enchimento!". 
+● Caso contrário, exibe: "Sistema Estável". 
+ */
+
+
+
+
 public class Exercicio2 { 
     public static void main(String[] args) { 
-    int nivelTanque = 95; // Simulação de valor recebido 
-    // Escreve aqui a tua estrutura if/else 
+        int nivelTanque = 95; 
+        String log;
+
+        //Define o log dependendo do gatilho acionado, levando em consideração o nivel do tanque (nivelTanque)
+        if (nivelTanque >= 90){
+            log = "ALERTA: Nível Crítico - Abrir Válvula de Escoamento!";
+        }
+        else if (nivelTanque < 10 ){ 
+            log = "ALERTA: Nível Baixo - Ativar Bomba de Enchimento!";
+        } else {
+            log = "Sistema Estável";
+        }
+
+        //Imprime o log na tela
+        System.out.println(log);
     } 
-    } 
+} 
