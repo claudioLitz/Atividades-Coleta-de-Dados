@@ -12,14 +12,14 @@ public class Exercicio5 {
     public static void main(String[] args) { 
     double valorBruto = 512; 
 
-    //Cria uma String com o resultado para deixar apenas com 2 casas decimais
+    //Create a String with the result of converterEscala() method
     String resultado = String.format("%.2f", converterEscala(valorBruto));
 
-    //Imprime o valor na escala
+    //Print value 
     System.out.println("O valor na escala de 0-100% é: " + resultado +"% "); 
     } 
 
-    //Método com a fórmula para converter
+    //Method with the formula to convert
     public static double converterEscala(double valorBruto){
         return (valorBruto / 1023.0) * 100;
     }

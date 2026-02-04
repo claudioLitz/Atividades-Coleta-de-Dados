@@ -14,16 +14,15 @@ import java.util.Random;
 public class Exercicio3 { 
     public static void main(String[] args) { 
 
-        Random gerador = new Random(); //Abre o gerador de números aleatórios
+        Random gerador = new Random(); //Open random numbers generator
         int somaTotal = 0; 
-        int i = 0; //Variavel de controle do loop, 
+        int i = 0; //Loop control variable  
         double media;
 
-
-        //------------------------------Variaveis mutaveis pelo usuário----------------------------------------//
-        //max -> maximo dos valores que podem ser atingido pelo gerador de números random
-        //min -> minimo dos valores que podem ser atingido pelo gerador de números random
-        //horas -> quantos valores irá ser feito a média (x pçs/h)
+        //------------------------------Variable Change by User----------------------------------------//
+        //max -> Maximum value of random number generator
+        //min -> Minimun value of random number generator
+        //horas -> How many itens will be analyzed
         int max = 100, min = 50 , horas = 5;
 
 
@@ -31,19 +30,19 @@ public class Exercicio3 {
         while (true){
             i++;
 
-            //Gerador random num determinado intervalo
+            //Random number generator in a given range
             int numero = gerador.nextInt((max - min ) + 1) + min;
             System.out.println(numero);
             somaTotal = somaTotal + numero;
 
-            //Condicional para quebrar o loop
+            //Break loop condition
             if (i == horas){
                 media = somaTotal / i;
                 break;
             }
         }
 
-        //Imprime o resultado final
+        //Final print
         System.out.println("A média final ficou: " + media);
 
     } 

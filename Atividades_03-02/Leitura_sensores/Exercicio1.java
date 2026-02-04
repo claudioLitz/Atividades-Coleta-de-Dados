@@ -7,24 +7,25 @@ Objetivo: Criar um programa que simule a identificação de um sensor no sistema
 unidades." 
  */
 
+//import library
 import java.util.Scanner; 
 
 public class Exercicio1 { 
     public static void main(String[] args) { 
         Scanner input = new Scanner(System.in); 
 
-        //Scan do nome do sensor
+        //Sensor name scanned
         System.out.print("Digite por favor o nome do sensor: ");
         String sensor = input.nextLine();
 
-        //Scan do valor do sensor
+        //Sensor value scanned
         System.out.print("Digite o valor registrado da leitura: ");
         int leitura = input.nextInt();
 
-        //Limpa buffer do Scanner
+        //Scan buffer cleaned
         input.nextLine();
 
-        //Print geral das informações
+        //Print the message 
         System.out.println("Sensor " + sensor + " registrado com o valor " + leitura + " unidades");
         input.close(); 
     } 

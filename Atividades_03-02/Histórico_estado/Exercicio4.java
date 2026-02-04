@@ -9,15 +9,16 @@ Objetivo: Armazenar e analisar o estado de uma máquina durante o dia.
 
 public class Exercicio4 { 
     public static void main(String[] args) { 
-        int[] historico = {1, 0, 1, 1}; //Array exemplo
-        int TotalOperacao = 0; //Quantidade total de vezes que a máquina esteve "Em Operação"
+        int[] historico = {1, 0, 1, 1}; //Array exemple 
+        int TotalOperacao = 0; //Total times that the machine was in "Em Operação"
 
 
-        //Loop responsavel por percorrer cada um dos indices do array e conferir se é igual 1 ("Em Operação")
+        //Loop to analyze each index of array, if it is equals 1 ("Em Operação")
         for (int i = 0; i < historico.length; i++){
             if (historico[i] = 1){
 
-                //Se o valor era igual 1, aumenta o valor de TotalOperacao em mais 1
+
+                //If the value is equals "1", sum 1 in TotalOperacao
                 TotalOperacao++;
             } 
         }

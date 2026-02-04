@@ -14,10 +14,12 @@ Enchimento!".
 
 public class Exercicio2 { 
     public static void main(String[] args) { 
+
+        //Define variables
         int nivelTanque = 95; 
         String log;
 
-        //Define o log dependendo do gatilho acionado, levando em consideração o nivel do tanque (nivelTanque)
+        //Log defined by the trigger corresponding
         if (nivelTanque >= 90){
             log = "ALERTA: Nível Crítico - Abrir Válvula de Escoamento!";
         }
@@ -27,7 +29,7 @@ public class Exercicio2 {
             log = "Sistema Estável";
         }
 
-        //Imprime o log na tela
+        //Log printed
         System.out.println(log);
     } 
 } 
